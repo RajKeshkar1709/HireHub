@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Frontend Developer",
+    "description": "Looking for a React developer to build UI components.",
+    "location": "Bangalore",
+    "skills": ["React", "HTML", "CSS", "JavaScript"],
+    "deadline": "2025-07-31"
+    
+  },
+  {
+    "title": "Backend Developer",
+    "description": "We need someone to develop APIs using Node.js and Express.",
+    "location": "Mumbai",
+    "skills": ["Node.js", "Express", "MongoDB"],
+    "deadline": "2025-08-05"
+  },
+  {
+    "title": "Full Stack Developer",
+    "description": "Join our team to work on both frontend and backend tasks.",
+    "location": "Remote",
+    "skills": ["React", "Node.js", "MongoDB", "Express"],
+    "deadline": "2025-08-10"
+  },
+  {
+    "title": "Data Scientist",
+    "description": "Analyze big data and create ML models.",
+    "location": "Hyderabad",
+    "skills": ["Python", "Pandas", "Scikit-learn", "SQL"],
+    "deadline": "2025-07-28"
+  },
+  {
+    "title": "Mobile App Developer",
+    "description": "Build cross-platform mobile apps using Flutter.",
+    "location": "Pune",
+    "skills": ["Flutter", "Dart", "Firebase"],
+    "deadline": "2025-08-01"
+  }
+]

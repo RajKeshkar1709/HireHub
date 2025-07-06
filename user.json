@@ -1,0 +1,144 @@
+[
+  {
+    "name": "Ravi Yadav",
+    "email": "ravi1@example.com",
+    "password": "Ravi123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["Node.js", "MongoDB", "Express"],
+      "experience": 2,
+      "qualification": "B.Tech"
+    }
+  },
+  {
+    "name": "Anjali Verma",
+    "email": "anjali@example.com",
+    "password": "Anjali123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["React", "JavaScript"],
+      "experience": 1,
+      "qualification": "M.Tech"
+    }
+  },
+  {
+    "name": "Pawan Kumar",
+    "email": "pawan@example.com",
+    "password": "Pawan123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["Python", "Django"],
+      "experience": 3,
+      "qualification": "PhD"
+    }
+  },
+  {
+    "name": "Ritika Shah",
+    "email": "ritika@example.com",
+    "password": "Ritika123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["C++", "DSA"],
+      "experience": 2,
+      "qualification": "B.Tech"
+    }
+  },
+  {
+    "name": "Mohit Raj",
+    "email": "mohit@example.com",
+    "password": "Mohit123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["Angular", "TypeScript"],
+      "experience": 4,
+      "qualification": "M.Tech"
+    }
+  },
+  {
+    "name": "Kriti Sharma",
+    "email": "kriti@example.com",
+    "password": "Kriti123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["HTML", "CSS", "JS"],
+      "experience": 1,
+      "qualification": "Diploma"
+    }
+  },
+  {
+    "name": "Deepak Joshi",
+    "email": "deepak@example.com",
+    "password": "Deepak123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["Java", "Spring Boot"],
+      "experience": 5,
+      "qualification": "B.Tech"
+    }
+  },
+  {
+    "name": "Nisha Mehta",
+    "email": "nisha@example.com",
+    "password": "Nisha123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["SQL", "MongoDB"],
+      "experience": 2,
+      "qualification": "M.Tech"
+    }
+  },
+  {
+    "name": "Amit Chauhan",
+    "email": "amit@example.com",
+    "password": "Amit123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["C", "C++"],
+      "experience": 0,
+      "qualification": "B.Tech"
+    }
+  },
+  {
+    "name": "Sneha Patil",
+    "email": "sneha@example.com",
+    "password": "Sneha123",
+    "role": "jobseeker",
+    "profile": {
+      "skills": ["Kotlin", "Android"],
+      "experience": 1,
+      "qualification": "B.Tech"
+    }
+  },
+
+  
+  {
+    "name": "Raj HR",
+    "email": "raj.hr@example.com",
+    "password": "Raj123",
+    "role": "recruiter"
+  },
+  {
+    "name": "Neha Recruiter",
+    "email": "neha.hr@example.com",
+    "password": "Neha123",
+    "role": "recruiter"
+  },
+  {
+    "name": "Amit Sharma",
+    "email": "amit.hr@example.com",
+    "password": "Amit123",
+    "role": "recruiter"
+  },
+  {
+    "name": "Vikram Hire",
+    "email": "vikram.hr@example.com",
+    "password": "Vikram123",
+    "role": "recruiter"
+  },
+  {
+    "name": "Pooja HR",
+    "email": "pooja.hr@example.com",
+    "password": "Pooja123",
+    "role": "recruiter"
+  }
+]
