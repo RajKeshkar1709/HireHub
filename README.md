@@ -1,113 +1,91 @@
-HireHub – Backend API
-HireHub is a recruitment platform backend built using Node.js, Express.js, and MongoDB. It provides secure RESTful APIs for user registration, login, job posting, application management, interview scheduling, feedback, and referrals.
+🚀 HireHub Backend
+HireHub is a modern recruitment platform's backend API built with Node.js, Express, and MongoDB. It enables secure user management, job postings, job applications, referrals, and interview scheduling — all through a scalable RESTful API.
 
-🛠 Tech Stack
-Node.js
-
-Express.js
+🧰 Tech Stack
+Node.js + Express.js
 
 MongoDB + Mongoose
 
-JWT (JSON Web Token)
+JWT Authentication
 
-bcrypt.js
+bcrypt for password hashing
 
-Multer (for optional file uploads)
+dotenv for environment config
 
-CORS, dotenv
+Multer (optional for file uploads)
 
 📁 Project Structure
 bash
 Copy
 Edit
 hirehub-backend/
-├── controllers/
-│   ├── authController.js
-│   ├── jobController.js
-│   ├── applicationController.js
-│   └── ...
-├── models/
-│   ├── User.js
-│   ├── Job.js
-│   ├── Application.js
-│   └── ...
-├── routes/
-│   ├── authRoutes.js
-│   ├── jobRoutes.js
-│   └── ...
-├── middlewares/
-│   ├── auth.js
-│   └── errorHandler.js
-├── .env
-├── server.js
+│
+├── controllers/         # Route handler logic
+├── models/              # Mongoose schemas
+├── routes/              # Express routes
+├── middlewares/         # Auth & error handlers
+├── utils/               # Helper functions
+├── .env                 # Environment variables
+├── server.js            # Entry point
 └── README.md
-🔐 Authentication
-JWT-based authentication with login & register endpoints.
+🔐 Authentication & Roles
+🔑 JWT-based login system
 
-Role-based access: recruiter, jobseeker.
+🔐 Role-based access control:
 
-📌 API Endpoints
-Auth Routes – /api/auth
-Method	Route	Description
-POST	/register	Register user
-POST	/login	Login and get JWT
+recruiter – post/manage jobs
 
-Job Routes – /api/jobs
-Method	Route	Description
-POST	/	Post a new job (recruiter only)
-GET	/	Get all jobs
-GET	/:id	Get single job
-DELETE	/:id	Delete job (owner only)
+jobseeker – browse/apply to jobs
 
-Application Routes – /api/applications
-Method	Route	Description
-POST	/	Apply to a job
-GET	/track	Track all applications
+🔗 API Endpoints
+🔸 Auth Routes /api/auth
+Method	Endpoint	Description
+POST	/register	Register a new user
+POST	/login	Authenticate user
 
-Interviews, Feedback, Referrals
-Add-on routes depending on the module structure:
+🔹 Job Routes /api/jobs
+Method	Endpoint	Access	Description
+POST	/	Recruiter	Post a new job
+GET	/	Public	Get all jobs
+GET	/:id	Public	Get job by ID
+DELETE	/:id	Recruiter	Delete job (owner only)
 
-/api/interviews
+🔸 Applications /api/applications
+Method	Endpoint	Access	Description
+POST	/	Jobseeker	Apply to a job
+GET	/track	Jobseeker	View all applications
 
-/api/feedback
+🧠 Additional Features (Modular)
+/api/interviews → Interview scheduling
 
-/api/referrals
+/api/feedback → Interview feedback
 
-⚙️ Environment Variables
-Create a .env file in the root directory and add:
+/api/referrals → Refer other candidates
 
-ini
-Copy
-Edit
-PORT=3000
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_jwt_secret_key
-🚀 Run the Project
+📦 Installation
 bash
-Copy
-Edit
+git clone https://github.com/yourusername/hirehub-backend.git
+cd hirehub-backend
 npm install
+Create a .env file in the root directory:
+
+env
+PORT=3000
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_secret_key
+
+🚀 Run the Server
+bash
 npm run dev
-Server runs on http://localhost:3000
+Server runs on: http://localhost:3000
 
 ✅ Features
-Secure authentication with hashed passwords
+RESTful API with clean MVC architecture
 
-Recruiter & Jobseeker roles
+Secure JWT login/register system
 
-Post & manage jobs
+Recruiter vs Jobseeker role management
 
-Apply to jobs
+Smart job posting + applicant tracking
 
-Track applications
-
-Scalable MVC structure
-
-📌 Future Enhancements
-Email notifications
-
-Admin dashboard
-
-Resume upload (Multer)
-
-AI-based resume matching
+Scalable & well-structured codebase
