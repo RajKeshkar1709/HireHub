@@ -54,7 +54,13 @@ const login = async (req, res) => {
 
       if (result) {
         const token = jwt.sign( { id: user._id, role: user.role }, process.env.JWT_SECRET, { expiresIn: "7d" } );
-         res.json({message:"Login SuccessFully", token });
+         res.json({
+    message: "Login SuccessFully",
+    token,
+    user: {
+      role: user.role
+    }
+  })
         
       } else {
         res.status(401).json({ message: "Wrong PassWord" });
